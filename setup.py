@@ -9,10 +9,10 @@ setup(
     name="statsmodels_HC_cov",
     version="0.1.0",
     long_description_content_type="text/markdown",
-    license="MIT",
+    license="GNU GPL",
     classifiers=[
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU GPL",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
