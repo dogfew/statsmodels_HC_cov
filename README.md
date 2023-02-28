@@ -1,6 +1,8 @@
 # statsmodels_HC_cov
+
 Матрицы форм HC4, HC4m и HC5, точно такие же, как и в R здесь: https://www.rdocumentation.org/packages/sandwich/versions/3.0-2/topics/vcovHC
-Просто код получения матрицы можно посмотреть здесь: https://github.com/dogfew/statsmodels_HC_cov/blob/main/statsmodels_HC_cov/cov.py
+
+Сами коды получения ковариационных матриц можно посмотреть здесь: https://github.com/dogfew/statsmodels_HC_cov/blob/main/statsmodels_HC_cov/cov.py
 Тесты писать мне лень. 
 
 #### Установка
