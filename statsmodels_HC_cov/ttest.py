@@ -28,6 +28,10 @@ class ttest:
             self.index = results.bse.index
         except Exception:
             self.index = [f"X{i}" for i in range(len(tvalues))]
+        self.df = pd.DataFrame({'coefs': self.coefs,
+                                'std err': self.se,
+                                't': self.tvalues,
+                                'P >|t|': self.pvalues}, index=self.index)
 
     @property
     def t_values(self):
@@ -37,9 +41,11 @@ class ttest:
     def p_values(self):
         return self.pvalues
 
+    def __getitem__(self, i):
+        if i in self.df.columns:
+            return self.df[i]
+        elif i in self.df.index:
+            return self.df.loc[i]
+
     def __repr__(self):
-        df = pd.DataFrame({'coefs': self.coefs,
-                           'std err': self.se,
-                           't': self.tvalues,
-                           'P >|t|': self.pvalues}, index=self.index)
-        return str(df.round(4))
+        return str(self.df.round(4))
