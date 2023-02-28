@@ -1,6 +1,16 @@
 # statsmodels_HC_cov
 Матрицы форм HC4, HC4m и HC5, точно такие же, как и в R здесь: https://www.rdocumentation.org/packages/sandwich/versions/3.0-2/topics/vcovHC
 
+## Установка
+```
+https://github.com/dogfew/statsmodels_HC_cov
+cd statsmodels_HC_cov
+python main.py 
+```
+## Удаление
+```
+pip uninstall statsmodels-hc-cov
+```
 ## Подготовка 
 ### Подготовка данных
 ```
@@ -44,3 +54,7 @@ array([[ 1.05090039e-28,  4.55713314e-29, -2.07878713e-29,
        [ 1.65585695e-29, -1.48798976e-29,  1.20951337e-30,
          1.22059254e-28]])
 ```
+
+# Зачем?
+
+У меня сгорело, что я нигде в питоне это не нашёл. Впрочем, это никому и не нужно, кроме студентов.
