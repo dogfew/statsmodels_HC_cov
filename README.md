@@ -11,7 +11,10 @@ python main.py
 ```
 pip uninstall statsmodels-hc-cov
 ```
-## Подготовка 
+## Подготовка к использованию библиотеки
+
+Сначала необходимо подготовить модель типа OLS из statsmodels.api, и зафитить её.
+
 #### Подготовка данных
 ```
 >>> from sklearn.datasets import make_regression
