@@ -96,5 +96,5 @@ def vcov_hc(results: RegressionResultsWrapper,
         case "hc4m":
             return cov_hc4m(results)
         case _:
-            raise f"There is no such type like {cov_type}. Please, try one of these: {', '.join(types)}"
+            raise BaseException f"There is no such type like {cov_type}. Please, try one of these: {', '.join(types)}"
 
