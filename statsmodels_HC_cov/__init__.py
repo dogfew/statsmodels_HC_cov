@@ -1,1 +1,2 @@
-from cov import *
+from .cov import *
+from .ttest import * 
