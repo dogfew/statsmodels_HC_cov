@@ -32,7 +32,7 @@ pip uninstall statsmodels-hc-cov
 ## Использование этой библиотеки
 #### Импорт потенциально необходимых вещей
 ```
->>> from statsmodels_HC_cov.cov import cov_hc5, cov_hc4, cov_hc4m, vcov_hc, ttest
+>>> from statsmodels_HC_cov import cov_hc5, cov_hc4, cov_hc4m, vcov_hc, ttest
 ```
 #### Получить ковариационную матрицу соответствующей функцией
 ```
