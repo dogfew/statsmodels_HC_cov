@@ -121,7 +121,10 @@ class ttest:
         self.pvalues = np.array(pvalues)
         self.coefs = np.array(results.params)
         self.cov_type = cov_type
-        self.index = results.bse.index
+        try:
+            self.index = model.bse.index
+        except Exception: 
+            self.index = [f"X{i}" for i in range(len(tvalues))]
 
     @property
     def t_values(self):
