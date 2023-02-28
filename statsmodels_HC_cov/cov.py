@@ -45,7 +45,7 @@ def cov_hc4(results: RegressionResultsWrapper) -> np.ndarray:
     :param results: fitted OLS model object from statsmodels
     :return: HC4m covariance matrix
 
-    Cribari-Neto & Da Silva (2011)
+    Cribari-Neto (2004)
     """
     X: np.ndarray = np.array(results.model.exog)
     diaghat: np.ndarray = np.diag(X @ np.linalg.pinv(X.T @ X) @ X.T)
