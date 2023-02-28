@@ -121,7 +121,7 @@ class ttest:
         self.pvalues = np.array(pvalues)
         self.coefs = np.array(results.params)
         self.cov_type = cov_type
-        self.index = tvalues.index
+        self.index = results.bse.index
 
     @property
     def t_values(self):
