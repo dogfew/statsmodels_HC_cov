@@ -1,12 +1,13 @@
 # statsmodels_HC_cov
 Матрицы форм HC4, HC4m и HC5, точно такие же, как и в R здесь: https://www.rdocumentation.org/packages/sandwich/versions/3.0-2/topics/vcovHC
 
-## Подготовка данных
+## Подготовка 
+### Подготовка данных
 ```
 >>> from sklearn.datasets import make_regression
 >>> X, y = make_regression(n_features=4)
 ```
-## Подготовка модели
+### Подготовка модели
 ```
 >>> from statsmodels.api import OLS
 >>> model = OLS(y, X).fit()
