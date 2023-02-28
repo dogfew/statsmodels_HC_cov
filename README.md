@@ -9,6 +9,7 @@ git clone https://github.com/dogfew/statsmodels_HC_cov
 cd statsmodels_HC_cov
 python main.py 
 ```
+Enter.
 #### Удаление
 ```
 pip uninstall statsmodels-hc-cov
