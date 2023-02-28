@@ -1,13 +1,13 @@
 # statsmodels_HC_cov
 Матрицы форм HC4, HC4m и HC5, точно такие же, как и в R здесь: https://www.rdocumentation.org/packages/sandwich/versions/3.0-2/topics/vcovHC
 
-## Установка
+#### Установка
 ```
 https://github.com/dogfew/statsmodels_HC_cov
 cd statsmodels_HC_cov
 python main.py 
 ```
-## Удаление
+#### Удаление
 ```
 pip uninstall statsmodels-hc-cov
 ```
